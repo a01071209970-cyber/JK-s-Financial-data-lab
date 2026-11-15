@@ -1,0 +1,24 @@
+
+# Python virtual environment
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# SEC raw data
+data/raw/
+
+# Generated data and databases
+data/processed/
+*.duckdb
+*.duckdb.wal
+
+# Private environment settings
+.env
+
+# macOS
+.DS_Store
+
+# VS Code local settings
+.vscode/
