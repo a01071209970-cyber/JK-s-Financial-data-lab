@@ -45,7 +45,27 @@ https://www.sec.gov/search-filings/edgar-application-programming-interfaces
 
 ## Project Status
 
-Week 1 - Environment setup and SEC data collection.
+### Week 1 — Completed
+- Python and DuckDB environment
+- SEC Company Facts collection
+- 8,134 PLTR financial observations
+- Data ingestion and structural validation
+
+### Week 2 — Completed
+- SEC filing version analysis
+- Basic point-in-time selection
+- 12 quarterly revenue observations
+- 12 quarterly operating income observations
+- Quarterly OCF, CAPEX, and FCF
+- Quarterly metrics table
+- Revenue growth and profitability analysis
+- Internal data quality validation: PASS
+
+### Week 3 — Next
+- NVDA data integration
+- Fiscal calendar generalization
+- Multi-company financial analysis
+
 
 ## Data Quality Principles
 
