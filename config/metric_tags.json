@@ -1,0 +1,18 @@
+
+{
+  "version": 1,
+  "metric_tags": {
+    "PLTR": {
+      "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+      "operating_income": "OperatingIncomeLoss",
+      "ocf": "NetCashProvidedByUsedInOperatingActivities",
+      "capex": "PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    "NVDA": {
+      "revenue": "Revenues",
+      "operating_income": "OperatingIncomeLoss",
+      "ocf": "NetCashProvidedByUsedInOperatingActivities",
+      "capex": "PaymentsToAcquireProductiveAssets"
+    }
+  }
+}

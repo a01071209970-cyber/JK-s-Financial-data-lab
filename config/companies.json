@@ -1,0 +1,28 @@
+
+{
+  "version": 1,
+  "companies": [
+    {
+      "ticker": "PLTR",
+      "company_name": "Palantir Technologies Inc.",
+      "cik": "0001321655",
+      "fiscal_calendar": {
+        "type": "calendar_quarters",
+        "year_end_month": 12,
+        "year_end_day": 31
+      }
+    },
+    {
+      "ticker": "NVDA",
+      "company_name": "NVIDIA Corporation",
+      "cik": "0001045810",
+      "fiscal_calendar": {
+        "type": "week_52_53",
+        "year_end_month": 1,
+        "year_end_weekday": "sunday",
+        "year_end_rule": "last",
+        "quarter_weeks": [13, 13, 13]
+      }
+    }
+  ]
+}
