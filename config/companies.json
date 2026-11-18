@@ -23,6 +23,28 @@
         "year_end_rule": "last",
         "quarter_weeks": [13, 13, 13]
       }
+    },
+    {
+      "ticker": "AMD",
+      "company_name": "Advanced Micro Devices, Inc.",
+      "cik": "0000002488",
+      "fiscal_calendar": {
+        "type": "week_52_53",
+        "year_end_month": 12,
+        "year_end_weekday": "saturday",
+        "year_end_rule": "last",
+        "quarter_weeks": [13, 13, 13]
+      }
+    },
+    {
+      "ticker": "MSFT",
+      "company_name": "Microsoft Corporation",
+      "cik": "0000789019",
+      "fiscal_calendar": {
+        "type": "calendar_quarters",
+        "year_end_month": 6,
+        "year_end_day": 30
+      }
     }
   ]
 }

@@ -74,40 +74,99 @@ def add_months(first_day, number):
 
 
 # 3. Calculate fiscal-year ending date
-def fiscal_year_end(rule, fiscal_year):
-    month = rule["year_end_month"]
 
-    if rule["type"] == "calendar_quarters":
+def fiscal_year_end(rule, fiscal_year):
+    """
+    Calculate the fiscal year-end date.
+
+    Supports:
+    1. Calendar-quarter fiscal years
+    2. 52/53-week fiscal years ending on the
+       last specified weekday of a month
+
+    Examples:
+    - NVDA: last Sunday of January
+    - AMD: last Saturday of December
+    """
+
+    from datetime import date, timedelta
+
+    calendar_type = rule["type"]
+
+    # Standard calendar-based fiscal year
+    if calendar_type == "calendar_quarters":
         return date(
             fiscal_year,
-            month,
+            rule["year_end_month"],
             rule["year_end_day"]
         )
 
-    if rule["type"] == "week_52_53":
+    if calendar_type != "week_52_53":
+        raise ValueError(
+            f"Unsupported calendar type: {calendar_type}"
+        )
 
-        if (rule["year_end_rule"] != "last"
-                or rule["year_end_weekday"] != "sunday"):
-            raise ValueError(
-                "Only last Sunday rule is implemented"
-            )
+    # Currently, only the 'last weekday' rule
+    # is implemented.
+    if rule["year_end_rule"] != "last":
+        raise ValueError(
+            "Only the 'last weekday' rule is supported"
+        )
 
+    weekday_map = {
+        "monday": 0,
+        "tuesday": 1,
+        "wednesday": 2,
+        "thursday": 3,
+        "friday": 4,
+        "saturday": 5,
+        "sunday": 6
+    }
+
+    weekday_name = rule[
+        "year_end_weekday"
+    ].lower()
+
+    if weekday_name not in weekday_map:
+        raise ValueError(
+            f"Unsupported weekday: {weekday_name}"
+        )
+
+    target_weekday = weekday_map[
+        weekday_name
+    ]
+
+    year_end_month = rule[
+        "year_end_month"
+    ]
+
+    # Find the final calendar day of
+    # the specified month.
+    if year_end_month == 12:
         last_day = date(
+            fiscal_year, 12, 31
+        )
+    else:
+        first_day_next_month = date(
             fiscal_year,
-            month,
-            calendar.monthrange(
-                fiscal_year, month
-            )[1]
+            year_end_month + 1,
+            1
         )
 
-        # Python weekday: Monday=0, Sunday=6
-        days_back = (last_day.weekday() - 6) % 7
-
-        return last_day - timedelta(
-            days=days_back
+        last_day = (
+            first_day_next_month
+            - timedelta(days=1)
         )
 
-    raise ValueError("Unsupported calendar type")
+    # Move backwards to the last matching
+    # weekday in that month.
+    days_back = (
+        last_day.weekday() - target_weekday
+    ) % 7
+
+    return last_day - timedelta(
+        days=days_back
+    )
 
 
 # 4. Generate fiscal-quarter start and end dates

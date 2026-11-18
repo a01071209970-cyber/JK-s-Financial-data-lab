@@ -13,6 +13,18 @@
       "operating_income": "OperatingIncomeLoss",
       "ocf": "NetCashProvidedByUsedInOperatingActivities",
       "capex": "PaymentsToAcquireProductiveAssets"
+    },
+    "AMD": {
+      "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+      "operating_income": "OperatingIncomeLoss",
+      "ocf": "NetCashProvidedByUsedInOperatingActivities",
+      "capex": "PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    "MSFT": {
+      "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+      "operating_income": "OperatingIncomeLoss",
+      "ocf": "NetCashProvidedByUsedInOperatingActivities",
+      "capex": "PaymentsToAcquirePropertyPlantAndEquipment"
     }
   }
 }

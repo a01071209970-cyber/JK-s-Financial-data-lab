@@ -1,0 +1,37 @@
+
+{
+  "version": 1,
+  "as_of_date": "2026-11-17",
+  "metrics": {
+    "revenue_growth_yoy_pct": {
+      "usage": "PRIMARY",
+      "cross_company_ranking": true,
+      "comparability": "CONDITIONAL",
+      "notes": "Compare equivalent fiscal quarters and review reporting-period differences."
+    },
+    "operating_margin_pct": {
+      "usage": "PRIMARY",
+      "cross_company_ranking": true,
+      "comparability": "CONDITIONAL",
+      "notes": "GAAP operating margin. Review one-off items and business-model differences."
+    },
+    "ocf_margin_pct": {
+      "usage": "SECONDARY",
+      "cross_company_ranking": true,
+      "comparability": "CONDITIONAL",
+      "notes": "OCF divided by revenue. Working-capital movements can distort individual quarters."
+    },
+    "fcf_margin_pct": {
+      "usage": "REFERENCE",
+      "cross_company_ranking": false,
+      "comparability": "RESTRICTED",
+      "notes": "CAPEX concepts are not yet standardized."
+    },
+    "company_reported_fcf_usd": {
+      "usage": "REFERENCE",
+      "cross_company_ranking": false,
+      "comparability": "RESTRICTED",
+      "notes": "Company-specific FCF definitions and adjustments differ."
+    }
+  }
+}

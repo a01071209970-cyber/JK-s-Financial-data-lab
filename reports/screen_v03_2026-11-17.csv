@@ -1,0 +1,5 @@
+ticker,fiscal_year,fiscal_quarter,period_end,quarterly_revenue_yoy_pct,operating_margin_pct,operating_margin_yoy_change_pp,ocf_margin_pct,ltm_revenue_usd,ltm_revenue_yoy_pct,ltm_operating_margin_pct,filing_age_days,fundamental_status,failure_reasons
+NVDA,2027,2,2026-07-26,105.85,66.24,5.39,25.02,302969000000,83.38,65.21,83,PASS,
+PLTR,2026,3,2026-09-30,95.87,46.89,13.60,52.07,7288260000,87.06,45.64,14,PASS,
+AMD,2026,3,2026-09-26,44.68,21.17,7.43,8.99,45436000000,41.87,17.72,13,PASS,
+MSFT,2027,1,2026-09-30,18.80,49.76,0.88,62.85,346445000000,17.91,47.10,20,FAIL,Revenue YoY below threshold

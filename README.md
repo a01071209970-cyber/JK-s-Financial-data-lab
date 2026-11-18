@@ -61,11 +61,40 @@ https://www.sec.gov/search-filings/edgar-application-programming-interfaces
 - Revenue growth and profitability analysis
 - Internal data quality validation: PASS
 
-### Week 3 — Next
-- NVDA data integration
-- Fiscal calendar generalization
-- Multi-company financial analysis
+### Week 3 — Completed
 
+**Multi-Company Financial Analysis Engine**
+
+- PLTR and NVDA fiscal-calendar configuration
+- Company-specific SEC XBRL tag mapping
+- 35,415 financial observations in DuckDB
+- 24 quarterly financial records
+- Revenue, operating income, OCF and CAPEX
+- Quarterly FCF and profitability metrics
+- Auditable supplemental reconciliation
+- PLTR vs NVDA LTM financial comparison
+- Internal validation: PASS
+
+**Key Results**
+- PLTR LTM revenue: $7.288B
+- NVDA LTM revenue: $302.969B
+- PLTR LTM operating margin: 45.64%
+- NVDA LTM operating margin: 65.21%
+
+**Limitations**
+- NVDA CAPEX definition is provisional
+- Company-reported FCF may differ from simple FCF
+- Fiscal calendars and latest reporting dates differ
+- Full point-in-time backtesting is not yet implemented
+
+See `reports/week3_validation.md` for details.
+
+### Week 4 — Planned
+
+- Financial metric standardization
+- Expanded U.S. technology-company coverage
+- Enhanced data quality testing
+- Multi-company screening logic
 
 ## Data Quality Principles
 

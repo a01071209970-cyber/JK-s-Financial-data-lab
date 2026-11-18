@@ -1,0 +1,12 @@
+
+{
+  "version": 1,
+  "as_of_date": "2026-11-17",
+  "expected_tickers": ["PLTR", "NVDA"],
+  "required_history_quarters": 8,
+  "min_revenue_yoy_pct": 20.0,
+  "min_operating_margin_pct": 10.0,
+  "min_operating_margin_improvement_pp": 0.0,
+  "max_filing_age_days": 180,
+  "fcf_cross_company_ranking": false
+}

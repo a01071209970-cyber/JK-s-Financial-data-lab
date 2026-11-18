@@ -1,0 +1,40 @@
+
+{
+  "version": 1,
+  "metrics": {
+    "revenue_usd": {
+      "name": "Revenue",
+      "basis": "US-GAAP reported revenue"
+    },
+    "operating_income_usd": {
+      "name": "Operating Income",
+      "basis": "US-GAAP operating income"
+    },
+    "ocf_usd": {
+      "name": "Operating Cash Flow",
+      "basis": "Net cash provided by operating activities"
+    },
+    "capex_usd": {
+      "name": "Selected CAPEX",
+      "basis": "Company-specific cash expenditure concept",
+      "cross_company_comparable": false
+    },
+    "fcf_usd": {
+      "name": "Simple Free Cash Flow",
+      "formula": "ocf_usd - capex_usd",
+      "company_reported_fcf": false,
+      "cross_company_comparable": false
+    }
+  },
+  "companies": {
+    "PLTR": {
+      "capex_tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+      "capex_definition_status": "PENDING_STANDARDIZATION"
+    },
+    "NVDA": {
+      "capex_tag": "PaymentsToAcquireProductiveAssets",
+      "capex_definition_status": "PENDING_STANDARDIZATION",
+      "has_supplemental_reconciliation": true
+    }
+  }
+}
