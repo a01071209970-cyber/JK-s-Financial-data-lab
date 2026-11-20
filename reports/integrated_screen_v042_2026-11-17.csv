@@ -1,0 +1,5 @@
+fundamental_rank,ticker,as_of_date,fundamental_status,quarter_revenue_yoy_pct,operating_margin_pct,ltm_revenue_yoy_pct,valuation_status,share_age_days,indicative_market_cap_usd_b,indicative_ev_usd_b,ev_sales,ev_ebit,valuation_basis,review_flags
+1,NVDA,2026-11-17,PASS,105.85,66.24,83.38,BLOCKED_SHARE_COUNT,88,3746.586,,,,illustrative_sensitivity_only; EV_not_approved,STALE_SHARES_88_DAYS; ROUNDED_COVER_SHARES; POST_CLOSE_EARNINGS_EXCLUDED
+2,PLTR,2026-11-17,PASS,95.87,46.89,87.06,INDICATIVE_NOTE_BASED,22,377.231,366.855,50.34,110.29,cash_and_us_treasuries; note_based_zero_borrowings; leases_excluded,MANUAL_10Q_NOTE_EVIDENCE; SHARES_NOT_CERTIFIED; LEASES_EXCLUDED
+3,AMD,2026-11-17,PASS,44.68,21.17,41.87,INDICATIVE,20,825.636,816.939,17.98,101.48,cash_plus_selected_short_term_investments; borrowings; leases_excluded,SHARES_NOT_CERTIFIED; LEASES_EXCLUDED
+4,MSFT,2026-11-17,FAIL,18.80,49.76,17.91,INDICATIVE,26,3759.437,3730.409,10.77,22.86,cash_plus_selected_short_term_investments; borrowings; leases_excluded,SHARES_NOT_CERTIFIED; LEASES_EXCLUDED; FINANCE_LEASE_SENSITIVITY_SEPARATE
