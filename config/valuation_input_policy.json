@@ -1,0 +1,80 @@
+
+{
+  "version": 1,
+  "as_of_date": "2026-11-17",
+  "expected_tickers": ["PLTR", "NVDA", "AMD", "MSFT"],
+  "methodology": {
+    "source": "SEC Company Facts; period-end instant facts available by cutoff",
+    "cash_policy": "Cash plus selected current investments only, with no duplicate parent/child tags",
+    "debt_policy": "Selected carrying-value debt total, reconciled to current plus noncurrent where available",
+    "lease_policy": "Operating and finance leases disclosed separately, excluded from provisional net liquidity",
+    "missing_policy": "Missing values are unknown, never zero",
+    "output_policy": "Results are provisional; no enterprise value or final net-debt ranking"
+  },
+  "companies": {
+    "PLTR": {
+      "cash_tag": "CashAndCashEquivalentsAtCarryingValue",
+      "short_term_investments_tag": "MarketableSecuritiesCurrent",
+      "combined_liquidity_tag": null,
+      "debt_total_tag": null,
+      "debt_current_tag": null,
+      "debt_noncurrent_tag": null,
+      "operating_lease_total_tag": null,
+      "operating_lease_noncurrent_tag": "OperatingLeaseLiabilityNoncurrent",
+      "finance_lease_total_tag": null,
+      "equity_tag": "StockholdersEquity",
+      "shares_taxonomy": "us-gaap",
+      "shares_tag": "CommonStockSharesOutstanding",
+      "allow_provisional_net_liquidity": false,
+      "review_note": "No current-quarter borrowing tag found; do not treat absent debt as zero."
+    },
+    "NVDA": {
+      "cash_tag": "CashAndCashEquivalentsAtCarryingValue",
+      "short_term_investments_tag": null,
+      "combined_liquidity_tag": null,
+      "debt_total_tag": "LongTermDebt",
+      "debt_current_tag": "LongTermDebtCurrent",
+      "debt_noncurrent_tag": "LongTermDebtNoncurrent",
+      "operating_lease_total_tag": "OperatingLeaseLiability",
+      "operating_lease_noncurrent_tag": null,
+      "finance_lease_total_tag": null,
+      "equity_tag": "StockholdersEquity",
+      "shares_taxonomy": "dei",
+      "shares_tag": "EntityCommonStockSharesOutstanding",
+      "allow_provisional_net_liquidity": false,
+      "review_note": "AFS debt securities and other investment facts may overlap; liquid investment scope not approved. DEI shares measured post-quarter."
+    },
+    "AMD": {
+      "cash_tag": "CashAndCashEquivalentsAtCarryingValue",
+      "short_term_investments_tag": "ShortTermInvestments",
+      "combined_liquidity_tag": null,
+      "debt_total_tag": "DebtLongtermAndShorttermCombinedAmount",
+      "debt_current_tag": "LongTermDebtCurrent",
+      "debt_noncurrent_tag": "LongTermDebtNoncurrent",
+      "operating_lease_total_tag": "OperatingLeaseLiability",
+      "operating_lease_noncurrent_tag": null,
+      "finance_lease_total_tag": null,
+      "equity_tag": "StockholdersEquity",
+      "shares_taxonomy": "us-gaap",
+      "shares_tag": "CommonStockSharesOutstanding",
+      "allow_provisional_net_liquidity": true,
+      "review_note": "Provisional liquid-assets-minus-borrowings only; check financial-statement notes and other borrowing classes before final use."
+    },
+    "MSFT": {
+      "cash_tag": "CashAndCashEquivalentsAtCarryingValue",
+      "short_term_investments_tag": "ShortTermInvestments",
+      "combined_liquidity_tag": "CashCashEquivalentsAndShortTermInvestments",
+      "debt_total_tag": "LongTermDebt",
+      "debt_current_tag": "LongTermDebtCurrent",
+      "debt_noncurrent_tag": "LongTermDebtNoncurrent",
+      "operating_lease_total_tag": "OperatingLeaseLiability",
+      "operating_lease_noncurrent_tag": null,
+      "finance_lease_total_tag": "FinanceLeaseLiability",
+      "equity_tag": "StockholdersEquity",
+      "shares_taxonomy": "us-gaap",
+      "shares_tag": "CommonStockSharesOutstanding",
+      "allow_provisional_net_liquidity": true,
+      "review_note": "Finance lease is material and excluded from provisional net liquidity; 41.269B DebtInstrumentCarryingAmount requires note-level reconciliation."
+    }
+  }
+}

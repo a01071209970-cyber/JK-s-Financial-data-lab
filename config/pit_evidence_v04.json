@@ -1,0 +1,33 @@
+
+{
+  "version": 1,
+  "as_of_date": "2026-11-17",
+  "market_close_et": "2026-11-17T16:00:00-05:00",
+  "pltr": {
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1321655/000132165526000048/pltr-20260930.htm",
+    "filing_date": "2026-11-03",
+    "quarter_end": "2026-09-30",
+    "quarter_end_class_shares": {
+      "class_a": 2306361081,
+      "class_b": 101787133,
+      "class_f": 1005000
+    },
+    "cover_share_date": "2026-10-26",
+    "cover_class_shares": {
+      "class_a": 2306705341,
+      "class_b": 101787133,
+      "class_f": 1005000
+    },
+    "credit_facility_balance_usd": 0,
+    "credit_facility_scope": "2014 Credit Facility",
+    "total_borrowings_approved": false,
+    "economic_rights_review_complete": false
+  },
+  "nvda": {
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/0001045810-26-000088-index.htm",
+    "filing_type": "8-K",
+    "filing_accepted_at_et": "2026-11-17T16:20:51-05:00",
+    "latest_pre_close_quarter_end_in_database": "2026-07-26",
+    "share_count_review_complete": false
+  }
+}
