@@ -1,0 +1,49 @@
+
+{
+  "version": 1,
+  "research_as_of": "2026-11-17",
+  "existing_tickers": [
+    "PLTR",
+    "NVDA",
+    "AMD",
+    "MSFT"
+  ],
+  "candidate_companies": [
+    {
+      "ticker": "AMZN",
+      "research_theme": "AWS cloud infrastructure and AI investment",
+      "calendar_status": "UNVERIFIED",
+      "onboarding_status": "PENDING_REVIEW"
+    },
+    {
+      "ticker": "META",
+      "research_theme": "AI advertising and platform profitability",
+      "calendar_status": "UNVERIFIED",
+      "onboarding_status": "PENDING_REVIEW"
+    },
+    {
+      "ticker": "GOOGL",
+      "research_theme": "Search, Google Cloud and AI",
+      "calendar_status": "UNVERIFIED",
+      "onboarding_status": "PENDING_REVIEW"
+    },
+    {
+      "ticker": "AVGO",
+      "research_theme": "AI semiconductors and infrastructure software",
+      "calendar_status": "UNVERIFIED",
+      "onboarding_status": "PENDING_REVIEW"
+    },
+    {
+      "ticker": "ANET",
+      "research_theme": "AI data center Ethernet networking",
+      "calendar_status": "UNVERIFIED",
+      "onboarding_status": "PENDING_REVIEW"
+    },
+    {
+      "ticker": "CRDO",
+      "research_theme": "High-speed data connectivity and AI interconnect",
+      "calendar_status": "UNVERIFIED",
+      "onboarding_status": "PENDING_REVIEW"
+    }
+  ]
+}
